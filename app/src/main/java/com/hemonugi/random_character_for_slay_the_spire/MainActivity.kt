@@ -18,5 +18,9 @@ class MainActivity : AppCompatActivity() {
         )
 
         imageView.setImageResource(listCharacters.random())
+
+        imageView.setOnClickListener {
+            imageView.setImageResource(listCharacters.random())
+        }
     }
 }
